@@ -1,0 +1,23 @@
+/* One hardware-decoded video preserves the 18-tile wall without 18 GIF decoders. */
+.trial-grid.has-wall-video {
+  isolation: isolate;
+}
+.trial-grid .trial-wall-video {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+.trial-grid .trial-wall-video[hidden] {
+  display: none;
+}
+.trial-grid.has-wall-video figure {
+  z-index: 1;
+  background: transparent;
+}
+.trial-grid.has-wall-video.wall-ready figure > img {
+  visibility: hidden;
+}

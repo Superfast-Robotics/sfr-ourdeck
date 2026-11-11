@@ -1,0 +1,10 @@
+/* Extend the hardware direction while preserving the main headline. */
+.systems-slide .systems-stack strong { font-size:33px; }
+.binary-target { position:absolute; left:1158px; top:455px; width:378px; height:245px; padding:26px; border:1px solid #8194ff66; border-radius:9px; background:linear-gradient(135deg,#8194ff12,#8194ff03 75%); box-shadow:0 0 50px #607eff0b; }
+.binary-target>.eyebrow { display:block; font-size:13px; letter-spacing:.1em; color:#9caeff; }
+.binary-target strong { display:block; margin-top:21px; font:400 39px/1.12 var(--font-body); letter-spacing:-1.8px; color:var(--ink); }
+.binary-target:after { content:''; position:absolute; inset:-5px; border:1px solid #8194ff14; border-radius:13px; pointer-events:none; }
+.chip-roadmap-link { position:absolute; left:1042px; top:578px; width:95px; height:1px; background:#6677b155; }
+.chip-roadmap-link i { position:absolute; left:0; top:0; height:1px; width:35px; background:linear-gradient(90deg,transparent,#c5ceff); box-shadow:0 0 9px #8194ff77; animation:chip-roadmap-flow 2.4s linear infinite; }
+.chip-roadmap-link b { position:absolute; right:0; top:-4px; width:9px; height:9px; border-top:1px solid #a3b4ff; border-right:1px solid #a3b4ff; transform:rotate(45deg); }
+@keyframes chip-roadmap-flow { 0% { transform:translateX(0); opacity:0; } 14%,85% { opacity:1; } 100% { transform:translateX(60px); opacity:0; } }

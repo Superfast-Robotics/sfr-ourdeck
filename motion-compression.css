@@ -1,0 +1,22 @@
+/* The original diagram remains available if WebGL is unavailable. */
+.compression-animation.has-live-motion #compression-matrix,
+.compression-animation.has-live-motion .compression-rail,
+.compression-animation.has-live-motion .compressed-halo { visibility:hidden; }
+.compression-animation .live-motion-canvas {
+  position:absolute;
+  left:-36px;
+  top:-30px;
+  width:692px;
+  height:315px;
+  pointer-events:none;
+}
+.compression-animation.has-live-motion .compression-labels {
+  top:296px;
+  left:2px;
+  right:36px;
+}
+@media print {
+  .compression-animation .live-motion-canvas { display:none; }
+  .compression-animation.has-live-motion #compression-matrix,
+  .compression-animation.has-live-motion .compression-rail { visibility:visible; }
+}

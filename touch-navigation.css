@@ -1,0 +1,21 @@
+/* Horizontal gestures work over slides, inline videos, and letterbox margins. */
+#viewport { touch-action:pan-y pinch-zoom; }
+#viewport video:not([controls]) { touch-action:pan-y pinch-zoom; }
+
+/* The mobile footer lives outside the scaled 1600 x 900 slide canvas. */
+#viewport.touch-navigation > .deck-controls {
+  left:12px; right:12px; bottom:12px; gap:8px; flex-wrap:wrap;
+  padding:4px; border:1px solid #252b3c; border-radius:10px;
+  background:#0a0c13f2; color:#eeeede; font-size:14px;
+}
+#viewport.touch-navigation .control-hint { display:none; }
+#viewport.touch-navigation .control-tools,
+#viewport.touch-navigation .control-pagination { gap:4px; }
+#viewport.touch-navigation .deck-controls button {
+  min-width:44px; min-height:44px; height:44px; padding:8px;
+  color:#c6cbd9; border-radius:6px; font-size:22px;
+}
+#viewport.touch-navigation .deck-controls button:active { background:#8997ff26; }
+#viewport.touch-navigation .control-pagination > span { min-width:64px; }
+#viewport.touch-navigation .page-slash { padding:0 6px; }
+@media print { #viewport > .deck-controls { display:none!important; } }

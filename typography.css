@@ -1,0 +1,146 @@
+/* Editorial display type with technical labels, inspired by liquid.ai.
+   Font files and their SIL Open Font Licenses are bundled for offline use. */
+@font-face {
+  font-family:'SFR Newsreader';
+  src:url('assets/fonts/Newsreader-Regular.woff2') format('woff2');
+  font-style:normal;
+  font-weight:200 800;
+  font-display:swap;
+}
+@font-face {
+  font-family:'SFR Newsreader';
+  src:url('assets/fonts/Newsreader-Italic.woff2') format('woff2');
+  font-style:italic;
+  font-weight:200 800;
+  font-display:swap;
+}
+@font-face {
+  font-family:'SFR Inter';
+  src:url('assets/fonts/Inter-Latin.woff2') format('woff2');
+  font-style:normal;
+  font-weight:100 900;
+  font-display:swap;
+}
+@font-face {
+  font-family:'SFR Chakra';
+  src:url('assets/fonts/ChakraPetch-Medium.woff2') format('woff2');
+  font-style:normal;
+  font-weight:500;
+  font-display:swap;
+}
+:root {
+  --font-display:'SFR Newsreader',Georgia,serif;
+  --font-body:'SFR Inter',Arial,sans-serif;
+  --font-label:'SFR Chakra','SFR Inter',sans-serif;
+}
+html,body {
+  font-family:var(--font-body);
+  font-optical-sizing:auto;
+  font-synthesis:none;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+/* The larger phrases use a light editorial voice; emphasis is true italic. */
+.cover h1,.slide-title,.success-copy,.economics-takeaway,
+.solution-copy .solution-title,.systems-title,.closing-slide h2 {
+  font-family:var(--font-display);
+  font-weight:400;
+  letter-spacing:-.035em;
+}
+.cover h1 { font-size:140px; line-height:1.03; letter-spacing:-.043em; }
+.cover h1 .cover-model { font-size:88px; letter-spacing:-.04em; }
+.cover h1 em,.success-copy em,.systems-title em,.closing-slide h2 em {
+  font-family:var(--font-display);
+  font-style:italic;
+  font-weight:400;
+}
+.cover-copy { top:260px; }
+.cover-copy p { margin-top:38px; font-size:29px; line-height:1.45; letter-spacing:-.035em; }
+.slide-title { font-size:82px; line-height:1.02; }
+.success-copy { font-size:53px; line-height:1.11; }
+.success-label { font-size:27px; letter-spacing:-.035em; }
+.economics-takeaway { font-size:76px; }
+.solution-copy .solution-title { font-size:85px; line-height:.99; letter-spacing:-.04em; }
+.solution-detail { font-size:24px; letter-spacing:-.025em; }
+.systems-title { font-size:87px; line-height:1; letter-spacing:-.04em; }
+.closing-slide h2 { font-size:120px; line-height:1.03; letter-spacing:-.04em; }
+
+/* Evidence remains immediate to read: sans-serif numbers, consistent rhythm. */
+.success-number,.thor-price strong,.solution-copy h2,
+.origin-main h2,.benchmark-head h2,.trials-heading h2 {
+  font-family:var(--font-body);
+  font-weight:400;
+  font-feature-settings:'lnum' 1,'tnum' 1;
+  letter-spacing:-.07em;
+}
+.success-number { font-size:174px; }
+.success-number span { font-size:108px; letter-spacing:-.055em; }
+.thor-price strong { font-size:155px; }
+.solution-copy h2 { font-size:161px; }
+.origin-main h2 { font-size:209px; }
+.origin-main h2 span { font-size:164px; vertical-align:10px; }
+.origin-main p { font-size:32px; letter-spacing:-.04em; }
+.benchmark-head h2 { font-size:160px; }
+.benchmark-head h2>span { font-size:128px; }
+.benchmark-head h2 em {
+  font-family:var(--font-display);
+  font-size:138px;
+  font-style:italic;
+  font-weight:400;
+  letter-spacing:-.045em;
+}
+.trials-heading h2 { font-size:121px; }
+.trials-heading h2 span { font-size:81px; letter-spacing:-.06em; }
+.trials-heading p { font-family:var(--font-display); font-size:44px; letter-spacing:-.03em; }
+.trials-heading>div>span { font-size:23px; letter-spacing:-.025em; }
+.evidence-copy h2 { font-family:var(--font-display); font-size:90px; font-weight:400; line-height:1.02; letter-spacing:-.035em; }
+.evidence-copy h2 em { font-style:italic; }
+.evidence-copy h2 .evidence-metric { font-family:var(--font-body); font-size:145px; letter-spacing:-.07em; font-weight:400; line-height:1.13; color:var(--ink); }
+.evidence-copy h2 .evidence-metric>span { color:var(--accent); }
+.evidence-copy p:not(.eyebrow) { font-size:22px; letter-spacing:-.025em; line-height:1.65; }
+
+/* Small typography has a technical, proportional rhythm rather than a typewriter look. */
+.eyebrow,.film-caption,.connection span,.network-event,
+.chip-overline,.chip-core>span,.overlay-eyebrow,.orin-target>span,
+.deck-controls,.control-tools #toggle-notes,.control-hint {
+  font-family:var(--font-label);
+  font-weight:500;
+  letter-spacing:.09em;
+}
+.eyebrow { font-size:15px; letter-spacing:.13em; }
+.film-caption { font-size:13px; letter-spacing:.1em; }
+.network-event { font-size:14px; letter-spacing:.07em; }
+.connection span { font-size:13px; letter-spacing:.08em; }
+.qualifier,.evidence-definition,.evidence-playback,.factory-film figcaption,
+.industry-films figcaption span,.duty-cycle>span,.compression-labels,
+.benchmark-model,.comparison-note,.trial-summary,.trial-grid figcaption,
+.systems-stack span,.chip-caption,.closing-site,.problem {
+  font-family:var(--font-body);
+  font-weight:400;
+  letter-spacing:-.015em;
+}
+.qualifier { font-size:14px; line-height:1.5; }
+.success-slide .qualifier,.trials-slide .qualifier { font-size:13px; }
+.origin-slide .qualifier { font-size:13px; }
+.factory-film figcaption { font-size:14px; }
+.evidence-definition { font-size:14px; }
+.trial-summary { font-size:15px; }
+.benchmark-column .benchmark-model { font-size:16px; }
+.comparison-note { font-size:14px; }
+.benchmark-column strong { font-size:34px; letter-spacing:-.04em; }
+.route-origin strong,.route-end strong,.systems-stack strong { letter-spacing:-.04em; }
+.route-origin strong { font-size:37px; }.route-end strong { font-size:35px; }
+.origin-history strong { font-size:39px; letter-spacing:-.04em; }
+.origin-history strong span { font-size:29px; letter-spacing:-.03em; }
+.price-caption,.thor-price span { font-size:23px; letter-spacing:-.03em; }
+.bottom-line { letter-spacing:-.025em; }
+.closing-contact { font-size:28px; letter-spacing:-.035em; }
+.closing-site { font-size:16px; }
+#notes-content h2,#overview h2 { font-family:var(--font-display); font-weight:400; }
+#notes-content h2 { font-size:32px; }
+#notes-content p { font-family:var(--font-body); }
+#overview-list button span:first-child { font-family:var(--font-label); }
+.origin-history .origin-github { margin:0; font:400 17px/1.35 var(--font-body); letter-spacing:-.02em; color:#aab1c2; }
+.origin-github a { text-decoration:none; }
+.origin-github a:hover { color:var(--ink); text-decoration:underline; text-underline-offset:4px; }

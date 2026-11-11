@@ -1,0 +1,68 @@
+[
+  {
+    "file": "Newsreader-Italic.woff2",
+    "family": "Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800",
+    "style": "italic",
+    "weight": "200 800",
+    "bytes": 146872,
+    "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCjohC.woff2",
+    "css": "@font-face {\n  font-family: 'Newsreader';\n  font-style: italic;\n  font-weight: 200 800;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCjohC.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}"
+  },
+  {
+    "file": "Newsreader-Regular.woff2",
+    "family": "Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800",
+    "style": "normal",
+    "weight": "200 800",
+    "bytes": 132000,
+    "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK4397yjA.woff2",
+    "css": "@font-face {\n  font-family: 'Newsreader';\n  font-style: normal;\n  font-weight: 200 800;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK4397yjA.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}"
+  },
+  {
+    "file": "Inter-Latin.woff2",
+    "family": "Inter:wght@100..900",
+    "style": "normal",
+    "weight": "100 900",
+    "bytes": 48256,
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+    "css": "@font-face {\n  font-family: 'Inter';\n  font-style: normal;\n  font-weight: 100 900;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}"
+  },
+  {
+    "file": "ChakraPetch-Medium.woff2",
+    "family": "Chakra Petch:wght@500",
+    "style": "normal",
+    "weight": "500",
+    "bytes": 9956,
+    "source": "https://fonts.gstatic.com/s/chakrapetch/v13/cIflMapbsEk7TDLdtEz1BwkebIl1R5_F.woff2",
+    "css": "@font-face {\n  font-family: 'Chakra Petch';\n  font-style: normal;\n  font-weight: 500;\n  font-display: swap;\n  src: url(https://fonts.gstatic.com/s/chakrapetch/v13/cIflMapbsEk7TDLdtEz1BwkebIl1R5_F.woff2) format('woff2');\n  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;\n}"
+  },
+  {
+    "license": "newsreader-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt",
+    "bytes": 4394
+  },
+  {
+    "license": "inter-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+    "bytes": 4377
+  },
+  {
+    "license": "chakra-petch-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/chakrapetch/OFL.txt",
+    "bytes": 4396
+  },
+  {
+    "file": "Caveat-Variable.ttf",
+    "family": "Caveat",
+    "style": "normal",
+    "weight": "400 700",
+    "bytes": 403648,
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/caveat/Caveat%5Bwght%5D.ttf",
+    "metadata": "https://raw.githubusercontent.com/google/fonts/main/ofl/caveat/METADATA.pb",
+    "css": "@font-face { font-family: 'SFR Caveat'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('assets/fonts/Caveat-Variable.ttf') format('truetype'); }"
+  },
+  {
+    "license": "caveat-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/caveat/OFL.txt",
+    "bytes": 4385
+  }
+]

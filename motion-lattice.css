@@ -1,0 +1,23 @@
+/* The fallback GIF remains present until the live renderer succeeds. */
+.benchmark-animation.has-live-motion > img { visibility:hidden; }
+.benchmark-animation.has-live-motion { isolation:isolate; }
+.benchmark-animation.has-live-motion::before {
+  content:'';
+  position:absolute;
+  inset:15% 12% 6%;
+  z-index:-1;
+  background:radial-gradient(ellipse at 50% 54%,#203f8f1c,transparent 68%);
+  pointer-events:none;
+}
+.benchmark-animation .live-motion-canvas {
+  position:absolute;
+  inset:0;
+  display:block;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+}
+@media print {
+  .benchmark-animation.has-live-motion > img { visibility:visible; }
+  .benchmark-animation .live-motion-canvas { display:none; }
+}

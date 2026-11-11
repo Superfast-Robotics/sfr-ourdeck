@@ -1,0 +1,10 @@
+/* The live 3D object occupies the original illustration panel. */
+.onboard-animation.has-live-motion .chip-scene { visibility:hidden; }
+.onboard-animation.has-live-motion { isolation:isolate; }
+.onboard-animation.has-live-motion canvas { position:absolute; inset:0; width:100%; height:100%; z-index:0; pointer-events:none; }
+.onboard-animation.has-live-motion .chip-overline,
+.onboard-animation.has-live-motion .chip-caption,
+.onboard-animation.has-live-motion .inference-pulse { z-index:2; }
+.onboard-animation.has-live-motion .chip-overline { color:#5368a7; }
+.onboard-animation.has-live-motion .inference-pulse { bottom:48px; }
+.onboard-animation.has-live-motion .chip-caption { bottom:4px; }

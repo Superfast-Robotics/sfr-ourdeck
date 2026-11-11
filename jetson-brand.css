@@ -1,0 +1,15 @@
+/* Official NVIDIA marks identify the Jetson compute modules. */
+.thor-price .jetson-hardware,
+.solution-copy .jetson-hardware {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  white-space: nowrap;
+}
+.jetson-hardware .nvidia-hardware-logo {
+  display: block;
+  flex: 0 0 112px;
+  width: 112px;
+  height: auto;
+  object-fit: contain;
+}

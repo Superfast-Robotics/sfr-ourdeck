@@ -1,0 +1,36 @@
+/* Funding allocation and milestones, on the same 1600 × 900 stage as the deck. */
+.ask-slide .slide-title { top:153px; }
+.ask-raise { position:absolute; left:64px; top:272px; font:400 190px/.98 var(--font-body); letter-spacing:-.075em; font-variant-numeric:tabular-nums; }
+.ask-raise span { color:var(--accent); }
+.ask-allocation { position:absolute; left:650px; right:64px; top:302px; display:grid; grid-template-columns:repeat(3,1fr); gap:38px; margin:0; }
+.ask-allocation div { min-width:0; display:flex; flex-direction:column; }
+.ask-allocation dt { margin-top:17px; font:400 25px/1.2 var(--font-body); letter-spacing:-.025em; color:#bdc1cc; }
+.ask-allocation dd { order:-1; margin:0; font:400 78px/1 var(--font-body); letter-spacing:-.065em; font-variant-numeric:tabular-nums; }
+.ask-allocation-meter { position:absolute; left:650px; right:64px; top:450px; height:3px; display:flex; gap:5px; }
+.ask-allocation-meter i { display:block; background:var(--accent); }
+.ask-allocation-meter i:nth-child(1) { flex:5; }
+.ask-allocation-meter i:nth-child(2) { flex:2; background:#b9c4ff; }
+.ask-allocation-meter i:nth-child(3) { flex:1; background:#e1e5ff; }
+.ask-milestone-label { position:absolute; left:64px; top:527px; color:#a9afbd; font:500 16px/1.3 var(--font-label); letter-spacing:.1em; text-transform:uppercase; }
+.ask-timeline { position:absolute; top:572px; left:64px; right:64px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:48px; list-style:none; padding:0; margin:0; }
+.ask-timeline:before { content:''; position:absolute; top:7px; left:0; right:0; height:1px; background:linear-gradient(90deg,#8194ffb0,#8194ff45); }
+.ask-timeline li { position:relative; padding-top:39px; }
+.ask-timeline li:before { content:''; position:absolute; top:0; left:0; width:15px; height:15px; border-radius:50%; background:var(--accent); border:4px solid var(--bg); box-shadow:0 0 0 1px #8194ff85; }
+.ask-month { margin:0 0 17px; font:400 43px/1 var(--font-display); letter-spacing:-.03em; }
+.ask-month span { font-size:31px; color:#c4c6cf; }
+.ask-target { font:400 30px/1.25 var(--font-body); letter-spacing:-.035em; }
+.ask-context { margin-top:15px; color:#a5adbe; font:400 19px/1.35 var(--font-body); letter-spacing:-.02em; }
+.ask-context-lg { color:#aab9ff; }
+.ask-product { margin-top:15px; color:#d9dde7; font:400 19px/1.4 var(--font-body); letter-spacing:-.02em; }
+.ask-product span { color:#a5adbe; }
+.ask-slide.is-active ~ .deck-controls .control-hint { visibility:hidden; }
+.ask-slide.is-active .ask-raise,
+.ask-slide.is-active .ask-allocation,
+.ask-slide.is-active .ask-milestone-label,
+.ask-slide.is-active .ask-timeline { animation:content-enter .85s cubic-bezier(.16,1,.3,1) both; }
+.ask-slide.is-active .ask-allocation { animation-delay:.08s; }
+.ask-slide.is-active .ask-milestone-label { animation-delay:.16s; }
+.ask-slide.is-active .ask-timeline { animation-delay:.22s; }
+#deck.motion-paused .ask-slide * { animation:none!important; }
+@media (prefers-reduced-motion:reduce) { #deck:not(.motion-enabled) .ask-slide * { animation:none!important; } }
+@media print { .ask-slide * { animation:none!important; } }

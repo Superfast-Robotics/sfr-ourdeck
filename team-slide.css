@@ -1,0 +1,14 @@
+/* Four colleagues, with the namecard comet following each portrait's rim. */
+.team-slide .team-kicker { position:absolute; left:64px; top:151px; }
+.team-slide .team-heading { position:absolute; left:64px; top:187px; margin:0; font:400 77px/1.02 var(--font-display); letter-spacing:-.035em; }
+.team-heading em { font-style:italic; }
+.team-members { position:absolute; left:64px; right:64px; top:366px; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; }
+.team-member { text-align:center; min-width:0; }
+.team-portrait { position:relative; width:270px; height:270px; margin:0 auto 15px; }
+.team-portrait img { position:absolute; inset:21px; display:block; width:228px; height:228px; border-radius:50%; object-fit:cover; object-position:50% 50%; background:#151923; }
+.team-orbit { position:absolute; inset:0; width:270px; height:270px; pointer-events:none; }
+.team-member h3 { font:500 33px/1.15 var(--font-body); letter-spacing:-.04em; margin:0 0 15px; white-space:nowrap; }
+.team-role { color:var(--accent); font:500 19px/1.2 var(--font-label); letter-spacing:.1em; margin:0 0 10px; }
+.team-expertise { font:400 24px/1.25 var(--font-body); letter-spacing:-.035em; margin:0 0 10px; white-space:nowrap; }
+.team-university { color:#aab1c2; font:400 23px/1.25 var(--font-body); letter-spacing:-.025em; margin:0; }
+

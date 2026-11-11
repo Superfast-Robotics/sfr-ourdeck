@@ -1,0 +1,28 @@
+/* A handwritten margin note; the original video frame remains untouched. */
+@font-face {
+  font-family:'SFR Caveat';
+  src:url('assets/fonts/Caveat-Variable.ttf') format('truetype');
+  font-style:normal;
+  font-weight:400 700;
+  font-display:swap;
+}
+.evidence-note { position:absolute; inset:0; z-index:4; pointer-events:none; }
+.evidence-note-lines { position:absolute; inset:0; width:100%; height:100%; overflow:visible; }
+.note-ink { stroke-linecap:round; stroke-linejoin:round; stroke-dasharray:100; stroke-dashoffset:0; }
+.note-arrow,.note-arrowhead { stroke:#95a7ff; stroke-width:2.8px; }
+.note-bubble { stroke:#dfdfcb; stroke-opacity:.75; stroke-width:1.8px; }
+.evidence-signal { position:absolute; left:1201px; top:134px; width:305px; margin:0; text-align:center; font:600 41px/.98 'SFR Caveat',cursive; letter-spacing:.005em; color:var(--ink); transform:rotate(-4deg); }
+.evidence-signal em { color:#a4b4ff; font-style:normal; font-size:46px; }
+.evidence-slide.is-active .note-arrow { animation:note-draw 1.05s cubic-bezier(.35,.02,.45,1) .2s both; }
+.evidence-slide.is-active .note-arrowhead { animation:note-draw .2s ease 1.13s both; }
+.evidence-slide.is-active .note-bubble { animation:note-draw .85s ease 1.15s both; }
+.evidence-slide.is-active .evidence-signal { animation:note-reveal .5s ease 1.45s both; }
+@keyframes note-draw { from { stroke-dashoffset:100; } to { stroke-dashoffset:0; } }
+@keyframes note-reveal { from { opacity:0; } to { opacity:1; } }
+#deck.motion-paused .evidence-note .note-ink,
+#deck.motion-paused .evidence-note .evidence-signal { animation:none!important; }
+@media (prefers-reduced-motion:reduce) {
+  #deck:not(.motion-enabled) .evidence-note .note-ink,
+  #deck:not(.motion-enabled) .evidence-note .evidence-signal { animation:none!important; }
+}
+@media print { .evidence-note .note-ink,.evidence-note .evidence-signal { animation:none!important; } }

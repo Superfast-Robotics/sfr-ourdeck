@@ -1,0 +1,12 @@
+/* The cloud/onboard concept occupies the old film area without changing copy. */
+.deployment-animation { position:absolute; right:42px; top:306px; width:390px; height:425px; isolation:isolate; }
+.deployment-animation .live-motion-canvas { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+.deployment-animation:before { content:''; position:absolute; inset:12% 7%; background:radial-gradient(ellipse,#344d9220,transparent 68%); z-index:-1; }
+.deployment-fallback { position:absolute; inset:0; perspective:800px; }
+.deployment-fallback i { position:absolute; width:125px; height:125px; top:55px; left:130px; border:1px solid #9ab3fb75; background:linear-gradient(135deg,#b6c7fc35,#26407125); transform:rotateX(55deg) rotateZ(45deg); }
+.deployment-fallback i:nth-child(2) { top:83px; opacity:.8; }
+.deployment-fallback i:nth-child(3) { top:111px; opacity:.5; }
+.deployment-fallback:after { content:''; position:absolute; left:194px; top:193px; height:108px; width:1px; background:linear-gradient(#829af7,transparent); }
+.deployment-fallback b { position:absolute; left:125px; top:282px; width:135px; height:135px; border:1px solid #adc5ff; background:repeating-linear-gradient(90deg,#4e70bf 0,#4e70bf 17px,#263e6f 18px,#263e6f 24px); box-shadow:0 6px #192d52,0 12px #152341,0 20px 40px #567bc533; transform:rotateX(55deg) rotateZ(45deg); }
+.deployment-animation.has-live-motion .deployment-fallback { visibility:hidden; }
+@media print { .deployment-animation .live-motion-canvas { display:none; } .deployment-animation.has-live-motion .deployment-fallback { visibility:visible; } }

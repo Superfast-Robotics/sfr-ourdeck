@@ -1,0 +1,27 @@
+/* The namecard's blue shooting star frames both ends of the presentation. */
+#slide-1 .cover-film { z-index:0; right:30px; top:105px; width:680px; height:680px; }
+#slide-1 .cover-film video { left:0; width:100%; height:100%; transform:none; object-fit:cover; object-position:center; mask-image:linear-gradient(90deg,transparent,#000 9%,#000 95%,transparent); }
+#slide-1 .cover-film:after { content:''; position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,#08090c,transparent 6%,transparent 94%,#08090c); }
+.closing-slide .closing-film { z-index:0; right:-160px; }
+#slide-1 .cover-shade { z-index:1; }
+#slide-1 .cover-copy { z-index:auto; }
+#slide-1 .cover-copy h1 { position:relative; z-index:3; }
+#slide-1 .cover-copy>p { position:relative; z-index:5; }
+#slide-1 .film-caption { z-index:6; }
+.cover-orbit {
+  position:absolute;
+  left:0;
+  top:110px;
+  width:960px;
+  height:650px;
+  display:block;
+  pointer-events:none;
+  user-select:none;
+}
+.cover-orbit-back { z-index:2; }
+.cover-orbit-front { z-index:4; }
+.closing-slide .closing-shade { z-index:1; }
+.closing-slide .cover-orbit { width:1080px; }
+.closing-slide>h2 { z-index:3; }
+.closing-slide .closing-contact,.closing-slide .closing-site { z-index:5; }
+@media print { .cover-orbit { opacity:.65; } }

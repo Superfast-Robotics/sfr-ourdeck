@@ -1,0 +1,89 @@
+/* Motion and revised compositions for slides 4, 6, 7 and 8. */
+
+/* The success-rate requirement is distinct from the factory example. */
+.success-label { position:absolute; left:66px; top:184px; font-size:30px; color:#c2c5ce; }
+.success-number { position:absolute; left:54px; top:253px; font-size:182px; line-height:1; font-weight:400; letter-spacing:-11px; }
+.success-number span { font-size:113px; margin-left:7px; letter-spacing:-6px; }
+.success-copy { position:absolute; left:64px; top:497px; font-size:48px; line-height:1.2; letter-spacing:-1.7px; }
+.factory-film { position:absolute; left:836px; right:64px; top:270px; }
+.factory-film .media-frame { width:100%; aspect-ratio:1280/636; border:1px solid #2d3341; }
+.factory-film video { object-fit:cover; }
+.factory-film figcaption { display:flex; justify-content:space-between; gap:18px; margin-top:20px; font:13px/1.5 Plex,monospace; color:#b6becf; }
+.factory-film figcaption span { color:#747e92; }
+.success-slide .network-event { top:696px; }
+.success-slide .qualifier { font-size:12px; }
+.evidence-playback { position:absolute; right:64px; top:775px; font:14px/1.3 Plex,monospace; color:#aeb9d0; }
+
+/* Slide 6: an editable, continuously active onboard compute diagram. */
+.solution-copy .solution-title { font-size:74px; margin-top:55px; }
+.onboard-animation { position:absolute; left:760px; top:146px; width:776px; height:628px; perspective:1100px; }
+.chip-overline { position:absolute; left:0; right:0; top:22px; text-align:center; font:14px Plex,monospace; letter-spacing:.16em; color:#5966a8; }
+.chip-scene { position:absolute; inset:60px 0 60px; perspective:1100px; }
+.chip-shadow { position:absolute; left:204px; top:225px; width:400px; height:210px; background:radial-gradient(ellipse,#66729a40,transparent 70%); filter:blur(14px); transform:rotate(-25deg); animation:chip-shadow 7s ease-in-out infinite; }
+.chip-assembly { position:absolute; left:156px; top:32px; width:470px; height:470px; transform-style:preserve-3d; animation:chip-float 7s ease-in-out infinite; }
+.circuit-board { position:absolute; inset:0; transform-style:preserve-3d; border-radius:22px; border:1px solid #adb7cf; background:linear-gradient(135deg,#e7eaf3b3,#c3cbdc88); box-shadow:0 2px 0 #9aa7c5,0 5px 0 #b3bdd2,0 15px 40px #57658c18; }
+.circuit-board:before { content:''; position:absolute; inset:22px; border:1px solid #adb8d655; border-radius:12px; background-image:radial-gradient(#9caac2 1px,transparent 1px); background-size:23px 23px; }
+.circuit-trace { position:absolute; height:1px; width:125px; background:#97a6c4; top:235px; left:0; transform-origin:235px 0; }
+.trace-2 { transform:rotate(90deg); }.trace-3 { transform:rotate(180deg); }.trace-4 { transform:rotate(270deg); }
+.circuit-trace:before,.circuit-trace:after { content:''; position:absolute; top:-12px; left:0; width:125px; height:1px; background:#97a6c480; }
+.circuit-trace:after { top:12px; }
+.circuit-loop { position:absolute; inset:44px; border:1px solid #8697c570; border-radius:60px; transform:translateZ(1px); }
+.circuit-loop:after { content:''; position:absolute; left:0; top:0; width:8px; height:8px; border-radius:50%; background:#687df1; box-shadow:0 0 13px #6d83ff; offset-path:inset(0 round 60px); animation:circuit-flow 4s linear infinite; }
+.loop-2 { inset:70px; border-color:#8b9cce60; border-radius:42px; }
+.loop-2:after { offset-path:inset(0 round 42px); animation-delay:-1.7s; animation-duration:3.4s; }
+.loop-3 { inset:96px; border-color:#8292c440; border-radius:28px; }
+.loop-3:after { offset-path:inset(0 round 28px); animation-delay:-2.8s; animation-duration:3s; }
+.chip-package { position:absolute; left:131px; top:131px; width:208px; height:208px; transform-style:preserve-3d; }
+.chip-pins { position:absolute; inset:12px -15px; background:repeating-linear-gradient(0deg,#7b88a5 0,#dce3f0 3px,#8793ad 5px,transparent 5px,transparent 13px); }
+.pins-vertical { inset:-15px 12px; background:repeating-linear-gradient(90deg,#7b88a5 0,#dce3f0 3px,#8793ad 5px,transparent 5px,transparent 13px); }
+.chip-edge { position:absolute; inset:0; border-radius:10px; background:#27345d; transform:translateZ(4px); box-shadow:0 2px #6d7ea8,0 5px #303e64,0 8px #26334d,0 20px 25px #283a6260; }
+.chip-core { position:absolute; inset:0; transform:translateZ(15px); border-radius:10px; border:1px solid #bac8ff; background:linear-gradient(135deg,#6f85e8,#3d519f 48%,#17284f); box-shadow:inset 0 0 0 9px #ffffff0a,inset 0 0 30px #c9d4ff14; overflow:hidden; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:22px; }
+.chip-core img { width:160px; height:auto; position:relative; z-index:2; }
+.chip-core>span { font:12px Plex,monospace; letter-spacing:.24em; color:#b7c6ff; position:relative; z-index:2; }
+.core-scan { position:absolute; top:-150%; left:-40%; width:180%; height:150%; background:linear-gradient(0deg,transparent,#c8d9ff44,transparent); transform:rotate(-35deg); animation:core-scan 4s linear infinite; }
+.inference-pulse { position:absolute; bottom:52px; left:280px; right:280px; height:20px; display:flex; gap:7px; align-items:center; }
+.inference-pulse i { flex:1; height:4px; background:#8d9bd1; animation:inference-wave 1.8s ease-in-out infinite; }
+.inference-pulse i:nth-child(3n+1) { animation-delay:-.3s; }.inference-pulse i:nth-child(3n+2) { animation-delay:-.6s; }.inference-pulse i:nth-child(3n) { animation-delay:-.9s; }
+.chip-caption { position:absolute; bottom:8px; left:0; right:0; text-align:center; font:16px Plex,monospace; color:#596581; }
+@keyframes chip-float { 0%,100% { transform:translateY(0) rotateX(53deg) rotateZ(-36deg); } 50% { transform:translateY(-17px) rotateX(47deg) rotateZ(-28deg); } }
+@keyframes chip-shadow { 0%,100% { opacity:.7; transform:rotate(-25deg) scale(1); } 50% { opacity:.4; transform:rotate(-20deg) scale(.92); } }
+@keyframes circuit-flow { to { offset-distance:100%; } }
+@keyframes core-scan { from { top:-150%; } to { top:150%; } }
+@keyframes inference-wave { 0%,100% { height:4px; opacity:.4; } 50% { height:17px; opacity:1; } }
+
+/* Slide 7: 100 tiles converge to 1% of their starting area. */
+.compression-animation { position:absolute; left:860px; top:239px; width:620px; height:325px; }
+#compression-matrix { position:absolute; left:0; top:0; width:580px; height:270px; perspective:800px; }
+.matrix-node { position:absolute; left:0; top:0; display:block; width:24px; height:24px; border:1px solid #b7c2ff99; border-radius:2px; background:linear-gradient(135deg,#a3b2ff,#596fc6); box-shadow:2px 2px 0 #2d3c70; transform-origin:0 0; animation:compress-model 6.5s cubic-bezier(.65,0,.25,1) infinite both; animation-delay:var(--delay); }
+.compression-rail { position:absolute; top:129px; left:275px; width:242px; height:1px; background:linear-gradient(90deg,#8194ff00,#8194ff66,#8194ff00); }
+.compressed-halo { position:absolute; left:441px; top:96px; width:65px; height:65px; border:1px solid #899dff55; box-shadow:0 0 45px #7d91ff22; border-radius:8px; animation:compressed-halo 6.5s ease-in-out infinite; }
+.compression-labels { position:absolute; left:0; right:70px; top:296px; display:flex; justify-content:space-between; font:18px Plex,monospace; color:#bdc6dd; }
+.compression-labels span:last-child { color:#a8b6ff; }
+@keyframes compress-model {
+  0%,12% { transform:translate3d(calc(var(--col)*26px),calc(var(--row)*26px),0) scale(1); opacity:.85; }
+  52%,76% { transform:translate3d(calc(460px + var(--col)*2.6px),calc(116px + var(--row)*2.6px),0) scale(.1); opacity:1; }
+  85% { transform:translate3d(calc(460px + var(--col)*2.6px),calc(116px + var(--row)*2.6px),0) scale(.1); opacity:0; }
+  86% { transform:translate3d(calc(var(--col)*26px),calc(var(--row)*26px),0) scale(1); opacity:0; }
+  100% { transform:translate3d(calc(var(--col)*26px),calc(var(--row)*26px),0) scale(1); opacity:.85; }
+}
+@keyframes compressed-halo { 0%,30%,87%,100% { opacity:0; transform:scale(.8); } 54%,76% { opacity:1; transform:scale(1); } }
+
+/* Slide 8: source logos and a real 3D GIF, with a still fallback. */
+.benchmark-animation { position:absolute; right:57px; top:142px; width:560px; height:360px; }
+.benchmark-animation img { display:block; width:100%; height:100%; object-fit:contain; }
+.benchmark-head { top:185px; }
+.benchmark-logos { position:absolute; left:64px; right:64px; top:516px; display:grid; grid-template-columns:repeat(3,1fr); gap:55px; }
+.benchmark-column { border-top:1px solid #3b4353; padding-top:30px; display:flex; flex-direction:column; align-items:flex-start; }
+.company-logo { height:70px; width:100%; display:flex; align-items:center; }
+.company-logo img { width:192px; max-height:66px; object-fit:contain; object-position:left center; }
+.logo-liquid img { width:202px; filter:invert(1); }.logo-qualcomm img { width:255px; filter:invert(1); }
+.benchmark-column .benchmark-model { font-size:15px; margin-top:16px; }
+.benchmark-column strong { font-size:36px; line-height:1.1; font-weight:400; letter-spacing:-1px; color:var(--accent); margin-top:23px; }
+.comparison-note { font:13px/1.5 Plex,monospace; color:#9aa6be; margin-top:14px; }
+
+.slide:not(.is-active) * { animation-play-state:paused; }
+.document-hidden *,.document-hidden *:before,.document-hidden *:after { animation-play-state:paused!important; }
+@media print {
+  .matrix-node { animation:none; transform:translate(calc(var(--col)*26px),calc(var(--row)*26px)); }
+  .chip-assembly { animation:none; transform:rotateX(53deg) rotateZ(-36deg); }
+}
